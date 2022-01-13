@@ -1,75 +1,75 @@
 <!DOCTYPE html>
 <html>
-    <cabeça>
+    <head>
         <title> Controle de Gastos - Kenzie </title>
         <meta  charset=" UTF-8 ">
 
-        <link  rel="stylesheet "type ="text/css " href ="./assets/css/reset.css">
-
+        <link rel="stylesheet" type="text/css" href="./reset.css">
+        <link rel="stylesheet type ="text/css" href ="./style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
         <link  rel="preconnect "href ="https://fonts.googleapis.com">
         <link  rel="preconnect "href ="https://fonts.gstatic.com "crossorigin>
         <link  href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="folha de estilo">
 
         <link  rel="stylesheet "type ="text/css" href ="./assets/css/style.css" >
-    </cabeça >
+    </head>
 
-    <!-- CORPO DA PÁGINA -->
-    <corpo >
+    <body>
+    
+        <main>
+            <section class ="SecaoInsercaoInformacoes" >
+                <h1> Controle de Gastos Kenzie </h1>
 
-        <!-- DIRETOR DE CONTEÚDO -->
-        <principal >
-
-            <!-- SEÇÃO DE INSERÇÃO DE INFORMAÇÕES -->
-            <section  class ="secaoInsercaoInformacoes" >
-                <h1 > Controle de Gastos Kenzie </h1 >
-                <p  class ="tresPontos" > ... </p >
-
-                <div  class="formularioEntradaOrcamento">
-                    <h2> Orçamento Total </h2 >
-                    <tipo de entrada="texto">
-                    <botão> Calcular </botão >
+                <div class="formularioEntradaOrcamento">
+                    <h2>Total Orçamento</h2 >
+                    <input type="text">
+                    <button> Calcular</button>
                 </div >
 
-                <div  class =" formularioEntradaDespesa">
+                <div class ="formularioEntradaDespesa">
                     <h2 > Nome despesa </h2>
-                    <tipo de entrada= "texto">
+                    <input type= "text">
 
                     <h2 > Valor despesa </h2>
-                    <tipo de entrada= "número">
+                    <input type= "number">
 
-                    <botão > Adicionar despesa </botão >
+                    <button> Adicionar despesa </button>
                 </div >
 
-                <div  class="containerDespesas">
-                    <div  class="containerDespesas_cabecalho">
-                        <p  class="tituloDespesa" >Título despesa</p>
+                <div class="containerDespesas">
+                    <div class="containerDespesas__cabecalho">
+                        <p class="tituloDespesas">Título despesa</p>
                         <p>Valor despesa</p>
                     </div>
                     <ul  class ="containerDespesas_lista">
                         <li>
                             <h3>- hotel</h3>
                             <p>$43</p>
-                            <img src="./assets/img/trash.svg" alt="Icone lixeira">
+                            <img src="./cesto-de-lixo (3).png"
                         </li>
                     </ul>
                 </div>
-            </seção>
+            </section>
+        </main>
 
             <!-- SEÇÃO DE IMPRESSÃO DE RESULTADOS -->
+        <main>
             <section  class="secaoImpressaoResultados">
-                <div  class="secaoImpressaoResultados_orcamento">
-                    <h3> Orçamento </h3>
-                    <p> + R$ 0 </p>
+                <div  class="secaoImpressaoResultados__orcamento">
+                    <h3>Orçamento </h3>
+                    <p>+ R$ 0 </p>
                 </div>
-                <div  class ="secaoImpressaoResultados_despesas">
-                    <h3> Despesas </h3>
-                    <p> - R$ 0 </p>
+                <div  class ="secaoImpressaoResultados__despesas">
+                    <h3>Despesas</h3>
+                    <p>- R$ 0</p>
                 </div>
-                <div  class="secaoImpressaoResultados_saldo">
-                    <h3> Saldo </h3>
-                    <p> R$ 0 </p>>
+                <div  class="secaoImpressaoResultados__saldo">
+                    <h3>Saldo</h3>
+                    <p>R$ 0</p>
                 </div>
-            </seção>
-        </principal>
-    </corpo>
+            </section>
+        </main>
+    </body>
 </html>
